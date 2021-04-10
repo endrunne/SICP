@@ -8,6 +8,7 @@
 ;; sum of squares
 (def sum-of-squares (fn [x, y] (+ (square x) (square y))))
 
+;; procedure to calculate the square of the two larger numbers
 (def calculate (fn [x, y, z]
                  (cond (and (< x y) (< x z))(sum-of-squares y z)
                        (< y z)(sum-of-squares x z)
